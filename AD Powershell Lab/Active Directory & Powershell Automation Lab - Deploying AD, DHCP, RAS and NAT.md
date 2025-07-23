@@ -20,7 +20,9 @@ I went to the [download site](https://www.microsoft.com/en-us/evalcenter/evaluat
 
 
 After filling the form, click on the 64-bit ISO file in the language of your choice and install it somewhere you can easily find it.
-![[Project Writeups/AD Powershell Lab/attachments/Pasted image 20250720164908.png]]
+<img width="1460" height="926" alt="Pasted image 20250720164908" src="https://github.com/user-attachments/assets/05b728b6-5019-4d70-8459-f606449d7933" />
+
+
 
 Next, open VirtualBox. Click new and a small window should pop up
 
@@ -28,13 +30,17 @@ For name, Windows Server 2022 is fine.
 For the ISO image, navigate to where you downloaded your image on your laptop.'
 For Edition: Select Windows Server 2022 Standard Evaluation (Desktop Experience). That is the option we will be using for this lab as you will be using the GUI of this VM.
 The settings should resemble something like this:
-![[Project Writeups/AD Powershell Lab/attachments/Pasted image 20250723031948.png]]
-![[Project Writeups/AD Powershell Lab/attachments/Pasted image 20250723032123.png]]
+<img width="938" height="729" alt="Pasted image 20250723031948" src="https://github.com/user-attachments/assets/f4a198c5-868c-4e19-bb0f-453d781bcda0" />
+
+<img width="943" height="723" alt="Pasted image 20250723032123" src="https://github.com/user-attachments/assets/099c4add-e645-4309-855c-ca6bd6f13219" />
+
 
 For the Network settings, Adapter 1 should be set to NAT and Adapter 2 should be set to Internal Network
 
-![[Project Writeups/AD Powershell Lab/attachments/Pasted image 20250723031803.png]]
-![[Project Writeups/AD Powershell Lab/attachments/Pasted image 20250723031822.png]]
+<img width="962" height="592" alt="Pasted image 20250723031803" src="https://github.com/user-attachments/assets/29707b90-9a73-413f-a171-ecb9cd5767de" />
+
+<img width="960" height="592" alt="Pasted image 20250723031822" src="https://github.com/user-attachments/assets/324a535b-d5e8-4f02-b3e9-4465ec5b5e49" />
+
 
 
 ## Step 1: Launch Windows Server Instance
@@ -45,7 +51,9 @@ I have previously provisioned a functioning instance of Windows Server 2025 usin
 
 Now in the search bar at the bottom of the RDP, look up "Server Manager" and click open. It should look like this:![[Project Writeups/AD Powershell Lab/attachments/Pasted image 20250720170446.png]]
 
-Once opened, you should have a window that looks like this:![[Project Writeups/AD Powershell Lab/attachments/Pasted image 20250720171311.png]]
+Once opened, you should have a window that looks like this:
+<img width="1903" height="969" alt="Pasted image 20250720171311" src="https://github.com/user-attachments/assets/96c6a1c5-13ac-428b-845a-39431ea9ef52" />
+
 
 If you see a bar loading at the top, it's just preparing the app for you. Once that is done. Click "Add roles and features" and this window should pop up:![[Project Writeups/AD Powershell Lab/attachments/Pasted image 20250720171529.png]]
 
