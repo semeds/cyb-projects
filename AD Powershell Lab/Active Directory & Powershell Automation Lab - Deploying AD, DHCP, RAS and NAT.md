@@ -16,7 +16,7 @@ I found a video where I could do this: https://www.youtube.com/watch?v=AlFQ0tSdg
 
 I went to the [download site](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2022) and clicked "Download the ISO" option. This option only provides a free trial for 180 days. There will then be a form for you to fill out
 
-![[Project Writeups/AD Powershell Lab/attachments/Pasted image 20250720155145.png]]
+![](attachments/Pasted%20image%2020250720155145%201.png)
 
 <img width="1880" height="904" alt="Pasted image 20250720155145 1" src="https://github.com/user-attachments/assets/4d1cbec9-ac25-4730-81ac-54c66c61e3f9" />
 
