@@ -63,6 +63,7 @@ If you see a bar loading at the top, it's just preparing the app for you. Once t
 Click next until you get to that tab that says "Server Roles". There you will select the following roles:
 - Active Directory Domain Services
 This window pops up:
+
 ![](attachments/Pasted%20image%2020250720172114.png)
 
 Click "Add Features"
