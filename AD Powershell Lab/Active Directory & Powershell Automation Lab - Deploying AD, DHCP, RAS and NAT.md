@@ -21,7 +21,6 @@ I went to the [download site](https://www.microsoft.com/en-us/evalcenter/evaluat
 After filling the form, click on the 64-bit ISO file in the language of your choice and install it somewhere you can easily find it.
 
 ![](attachments/Pasted%20image%2020250720164908.png)
-<img width="1460" height="926" alt="Pasted image 20250720164908" src="https://github.com/user-attachments/assets/05b728b6-5019-4d70-8459-f606449d7933" />
 
 
 
