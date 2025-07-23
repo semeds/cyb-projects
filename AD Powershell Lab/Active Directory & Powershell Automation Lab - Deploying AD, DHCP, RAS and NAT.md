@@ -104,10 +104,12 @@ Click on that to open a new window and you'll see something similar to the photo
 
 
 Right-click on mydomain.com (or whatever your domain name is), navigate to "New", then "[[Organizational Units]]". Click on that and we'll have a new pop up:
+
 ![](attachments/Pasted%20image%2020250720191646.png)
 
 
 In here, type "_ADMINS"_  and click "OK". The new folder should appear at the bottom
+
 ![](attachments/Pasted%20image%2020250720192215.png)
 
 
@@ -117,6 +119,7 @@ Right-click on the _ADMINS_ folder go to "New" then click "User"
 
 
 This window should pop up:
+
 ![](attachments/Pasted%20image%2020250720192535.png)
 
 
@@ -134,12 +137,15 @@ Right-click on the newly created user and click on "Properties"
 ![](attachments/Pasted%20image%2020250720200846.png)
 
 Click on the "Member Of", then click "Add..."
+
 ![](attachments/Pasted%20image%2020250720200941.png)
 
 Type in "domain admins" then click "Check Names". It will search for any groups that have the corresponding names. This should correct to the group "Domain Admins". 
+
 ![](attachments/Pasted%20image%2020250720201312.png)
 
 Your user properties should now look like this
+
 ![](attachments/Pasted%20image%2020250720201342.png)
 
 Now to make sure that everything is working right, log out of the Administrator account and log in using the new user credentials we just created. (This is not possible if you are using a RDP client)
@@ -148,6 +154,7 @@ Back in Server Manager, click on "Add Roles and Features". In the new window, cl
 ![](attachments/Pasted%20image%2020250720205549.png)
 
 Click Next until you get to the "Role Services" tab. Here, check on the "Routing" option. Click "Add Features", then click Next until you get to the "Confirmation" tab, where you can click "Install"
+
 ![](attachments/Pasted%20image%2020250720205850.png)
 
 
@@ -171,11 +178,13 @@ The installation wizard should pop up. Click Next. Click on "Network address tra
 ![](attachments/Pasted%20image%2020250721202303.png)
 
 You may encounter something like this:
+
 ![](attachments/Pasted%20image%2020250721202329.png)
 
 Here, we'll just click "Cancel" and close out from the "Routing and Remote Access" window. Go through the steps again starting from clicking on "Tools"
 
 After going through the steps again, the box should be populated like this:
+
 ![](attachments/Pasted%20image%2020250721202548.png)
 
 Here we will click on "\_Internet_" then click Next and then Finish.
@@ -202,6 +211,7 @@ Click on the arrow next to your DC so you see IPv4 and IPv6. Right-click IPv4 ->
 For the Name, put in 172.16.0.100-200. It's just to describe what we're using the scope for. Click Next.
 
 For IP Address Range, it should look like this:
+
 ![](attachments/Pasted%20image%2020250722001110.png)
 
 Click Next
@@ -234,6 +244,7 @@ Now we will use a Powershell script to create and populate the domain with users
 To use the internet freely we can configure the server to allow us browse whatever we want. This should NOT be done in a production environment
 
 So in the Server Manager Dashboard, Configure this local server -> IE Enhanced Security Configuration. Click "On" this option, and check both things off. Click OK
+
 ![](attachments/Pasted%20image%2020250722003203.png)
 
 This is just so we can download the script and text file containing the names we will be using for the powershell automation.
@@ -288,7 +299,8 @@ If this pops up:![](attachments/Pasted%20image%2020250722021328.png)
 
 Run ipconfig in the terminal/command prompt to check if we have a default gateway.
 
-If something like this shows:![](attachments/Pasted%20image%2020250722021410.png)
+If something like this shows:
+![](attachments/Pasted%20image%2020250722021410.png)
 
 
 Go back to the domain controller VM and open DHCP (Tools -> DHCP) 
@@ -301,6 +313,7 @@ Go back to the CLIENT VM
 Now in the CLIENT VM, run `ipconfig /renew` and you should see that your VM has a default gateway now. Now we can rename the PC and join the domain 
 
 This dialog box should pop up
+
 ![](attachments/Pasted%20image%2020250722024654.png)
 
 
