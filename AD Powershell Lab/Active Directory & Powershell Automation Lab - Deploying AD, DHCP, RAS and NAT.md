@@ -1,5 +1,3 @@
-I will followed this lab I found on YouTube: https://www.youtube.com/watch?v=X0IN36CUVsU
-
 There are two ways to complete this lab. Either using an EC2 instance on AWS or creating a virtual machine using a hypervisor such as Oracle VirtualBox.
 
 I used the VirtualBox method for the lab after I got to a part where the EC2 instance ran too slow as it heavily depends on your internet connection.
@@ -7,7 +5,7 @@ I used the VirtualBox method for the lab after I got to a part where the EC2 ins
 The EC2 instance method is great if your laptop may not have enough RAM to run the virtual machines at the same time and/or you have a strong internet connection.
 
 # Part 1: Deploying Active Directory
-### Step 1: Install Windows Server 2022
+### Step 1: Install Windows Server 2022 (Virtual Machine Method)
 First start was downloading Windows Server 2022 as virtual machine to be used in Virtual Box. I don't want it to affect anything on my laptop currently.
 
 The biggest problem I encountered was the tutorial being done on a Mac using VMWare Fusion, which I believe is a paid software. So I realized most of this lab will be configured to be ran on VirtualBox
@@ -40,10 +38,7 @@ For the Network settings, Adapter 1 should be set to NAT and Adapter 2 should be
 
 ![](attachments/Pasted%20image%2020250723031822.png)
 
-
-
-
-## Step 1: Launch Windows Server Instance
+## Step 1: Launch Windows Server Instance (EC2 Instance Method)
 
 I have previously provisioned a functioning instance of Windows Server 2025 using this guide here. This allows you use a Remote Desktop client ()RDP) for this lab.
 
